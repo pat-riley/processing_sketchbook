@@ -31,7 +31,7 @@ int mm = 475;
 void setup () {
   size(1500,1000);
   background(#FFFFFF);
-    cp5 = new ControlP5(this);
+  cp5 = new ControlP5(this);
 
   cp5.addSlider("x1")
      .setPosition(750,25)
@@ -82,6 +82,58 @@ void setup () {
      .setPosition(750,250)
      .setRange(x10,500)
      ;
+     
+     //y sliders begin
+     
+     cp5.addSlider("y1")
+     .setPosition(1000,25)
+     .setRange(0,y1)
+     ;
+     
+    cp5.addSlider("y2")
+     .setPosition(1000,50)
+     .setRange(y1,y2)
+     ;
+     
+    cp5.addSlider("y3")
+     .setPosition(1000,75)
+     .setRange(y2,y3)
+     ;
+     
+    cp5.addSlider("y4")
+     .setPosition(1000,100)
+     .setRange(y4,y5)
+     ;
+     
+     cp5.addSlider("y5")
+     .setPosition(1000,125)
+     .setRange(y5,y6)
+     ;
+     
+    cp5.addSlider("y6")
+     .setPosition(1000,150)
+     .setRange(y6,y7)
+     ;
+     
+    cp5.addSlider("y7")
+     .setPosition(1000,175)
+     .setRange(y7,y8)
+     ;
+     
+    cp5.addSlider("y8")
+     .setPosition(1000,200)
+     .setRange(y8,y9)
+     ;
+  
+      cp5.addSlider("y9")
+     .setPosition(1000,225) 
+     .setRange(y9,y10)
+     ;
+     
+    cp5.addSlider("y10")
+     .setPosition(1000,250)
+     .setRange(y10,500)
+     ;
 }
 
 void draw() {
@@ -89,7 +141,7 @@ void draw() {
   background(51);
   fill(102);
   stroke(255);
-  strokeWeight(2);
+  strokeWeight(0);
   beginShape();
   
     vertex(x1, y2);
