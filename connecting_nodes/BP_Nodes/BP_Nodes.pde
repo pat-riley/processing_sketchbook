@@ -9,12 +9,15 @@ int numDots = 1000;
 float maxRange = 50.0f;
 float minRange = 20.0f;
  
+boolean savePDF = false;
 void setup() {
   size(1200, 800);
   colorMode(RGB, 255);
-  background(22, 42, 83);
-  stroke(85,120,180);
+  background(0, 40, 85);
+  stroke(0,0,0);
   smooth();
+  
+
   
   cp5 = new ControlP5(this);
   dots = new PVector[numDots];
@@ -39,7 +42,12 @@ void setup() {
 }
  
 void draw() {
-  background(22, 42, 83);
+  if ( savePDF ) {
+    beginRecord( PDF, "pdf/myartwork-####.pdf" );
+  }
+ 
+  
+  background(300, 300, 300);
   for (int i=0; i<numDots; i++) {
     this.renderLines(dots[i].x, dots[i].y);
   }
