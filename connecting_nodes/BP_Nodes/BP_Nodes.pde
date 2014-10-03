@@ -10,6 +10,7 @@ float maxRange = 50.0f;
 float minRange = 20.0f;
  
 boolean savePDF = false;
+
 void setup() {
   size(1200, 800);
   colorMode(RGB, 255);
