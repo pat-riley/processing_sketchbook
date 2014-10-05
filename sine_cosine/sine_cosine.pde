@@ -1,5 +1,3 @@
-
-
 float x1, x2, y1, y2;
 float angle1, angle2;
 float scalar = 70;
