@@ -12,7 +12,7 @@ void setup() {
  	oscP5 = new OscP5(this,5001);
  
  	// set the remote location to be the localhost on port 5001
- 	myRemoteLocation = new NetAddress("127.0.0.1",8080);
+ 	myRemoteLocation = new NetAddress("127.0.0.1",5001);
 }
  
 
@@ -30,7 +30,7 @@ void mousePressed() {
 }
 
 void draw() {
- 
+ println("var X: "+varX);
 }
 
 
